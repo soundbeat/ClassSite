@@ -3,24 +3,154 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Contact Arrow Photography</title>
+    <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
 </head>
 <body>
-    <h1>Arrow Photography</h1>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio/index.html">Portfolio</a></li>
-        <li><a href="packages/index.html">Packages</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <h2>Contact Arrow Photography</h2>
-    <img src="assets/images/ArrowPhotograhyFrontPage4.jpg" width="490">
-    <img src="assets/images/ArrowPhotograhyFrontPage3small.jpg">
+    <header>
+        <h1><span>Arrow Photography</span></h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="packages/index.html">Packages</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div id="content">
+        <div class="first section">
+            <p><img src="assets/images/ArrowPhotograhyFrontPage4.jpg" alt="Wedding photography" /></p>
+            <h2>Contact Arrow Photography</h2>
+            <table>
+                <caption>Class Contact Details</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name:</th>
+                        <th scope="col">Gender:</th>
+                        <th scope="col">Email:</th>
+                        <th scope="col">Mood:</th>
+                    </tr>
+                </thead>
 
-    <ul>
-        <li><a href="general/terms.html">Terms &amp; Conditions</a></li>
-        <li><abbr title="Frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></li>
-    </ul>
+                <tbody>
+                    <tr>
+                        <th scope="row">Paul</th>
+                        <td rowspan="5">Male</td>
+                        <td>paul@here.com</td>
+                        <td>Happy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chris</th>
+
+                        <td>Chris@mail.com</td>
+                        <td>Calm</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Charles</th>
+
+                        <td>ohsohn@jsd.com</td>
+                        <td>Happy</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Daniel</th>
+
+                        <td>daniel@mail.com</td>
+                        <td>depressed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Guy</th>
+
+                        <td>guy@here.com</td>
+                        <td>Happy</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Emelie</th>
+                        <td rowspan="5">Female</td>
+                        <td>Emelie@there.com</td>
+                        <td>Happy</td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Jess</th>
+
+                        <td>Jess@gmail.com</td>
+                        <td>Happy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Madonna</th>
+
+                        <td>dodo.girl8393@gmail.com</td>
+                        <td>Happy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Louisa</th>
+
+                        <td>Louisa@gmail.com</td>
+                        <td>Happy</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Kat</th>
+
+                        <td>Kat@mail.com</td>
+                        <td>Cosy</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">All information provided is private &amp; confidential.</td>
+
+                    </tr>
+                </tfoot>
+            </table>
+<br>
+            <form method="post" action="http://webdesignstudents.co.uk/students/response.php">
+                <table>
+                <tr><td><label for="contactname">Name:</label></td><td><input type="text" name="contactname" id="contactname" required/></td></tr>
+                <tr><td><label for="contactemail">Email:</label></td><td><input type="email" name="contactemail" id="contactemail" required/></td></tr>
+                <tr><td></td>Gender:</td>
+                    <td></td><label>
+                        <input type="radio" name="gender" value="male" /> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" checked /> Female
+                    </label></td>
+                </tr>
+                <tr><td><label for="location">Location:</label></td>
+                       <td>
+                        <select name="location" id="location">
+                            <option value="Brighton">Brighton &amp; Hove</option>
+                            <option value="Worthing" selected>Worthing</option>
+                            <option value="Eastbourne">Eastbourne</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr><td><label for="comment">Comment:</label></td>
+                    <td><textarea name="comment" id="comment" cols="18" rows="8" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" name="submit" value="Send Comment"/></td>
+                </tr>
+                </table>
+            </form>
+
+
+        </div>
+    </div>
+    <footer>
+        <ul class="nav">
+            <li><a href="general/terms.html">Terms &amp; Conditions</a></li>
+            <li><abbr title="Frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></li>
+        </ul>
+        <tr>
+            &copy;2000 - 2014 Arrow Photography. All rights reserved.
+        </tr>
+    </footer>
 </body>
 </html>
