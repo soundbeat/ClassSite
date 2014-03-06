@@ -1,6 +1,6 @@
 @import url('normalize.css');
 /**
-* Reset or normalise used to standardise broswer display
+* Reset or normalise used to standardise browser display
   **/
 
 
@@ -15,6 +15,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 
+}
 
 
 a{
@@ -25,22 +26,25 @@ a{
 a:hover{
     color: #000000;
 }
+header,footer{
+    clear: both;
+}
 
-header ul, footer ul{
+header ul,footer ul{
     list-style: none;
     padding-left: 0;
     padding-right: 0;
     background-color: #999999;
 
 }
-header li, footer li{
+header li,footer li{
 
     width: 160px;
     float: left;
     text-align: center;
 }
 
-header a, footer a{
+header a,footer a{
     color: #000000;
     display: block;
     padding-top: 5px;
@@ -48,9 +52,11 @@ header a, footer a{
 
 }
 
-header a:hover, footer a:hover{
+header a:hover,footer a:hover{
     background-color: #999999;
 }
+
+
 
 
 footer li{
@@ -58,11 +64,19 @@ footer li{
 
 
 }
-
-
-div{
-    clear: both;
+ footer p{
+     padding: 10px;
+ }
+section div.subsection {
+    width: 460px;
+    margin: 24px 10px;
+    float: left;
 }
+
+
+
+
+
 
 /* Class based styles */
 
