@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>CSs positioning</title>
+
+    <style>
+
+        body{
+            width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        div#page{
+            position: relative;
+            width: 800px;
+            right: auto;
+            left: auto;
+        }
+
+        *{
+            outline: solid 1px #000;
+        }
+        a{
+            outline: none;
+        }
+        section.first p.two{
+            width: 300px;
+            height: 300px;
+            position: fixed;/*relative, absolute, fixed*/
+            top: 9px;
+            left: 800px;
+            right: 2px;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="wrapper" class="container">
+    <header>
+        <h1>Arow Photography</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="packages/index.html">Packages</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content" class="container">
+        <section class="first">
+            <h2>Top</h2>
+            <p class="one">Paragraph</p>
+            <p class="two">Paragraph</p>
+            <p class="three">Paragraph</p>
+            <p class="four">Paragraph</p>
+        </section>
+        <section class="second">
+            <h2>Middle</h2>
+            <p class="one">Paragraph</p>
+            <p class="two">Paragraph</p>
+            <p class="three">Paragraph</p>
+            <p class="four">Paragraph</p>
+        </section>
+        <section class="third">
+            <h2>Bottom</h2>
+            <p class="one">Paragraph</p>
+            <p class="two">Paragraph</p>
+            <p class="three">Paragraph</p>
+            <p class="four">Paragraph</p>
+         </section>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="general/terms.html">Terms & Conditions</a></li>
+                <li><a href="general/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <p>&copy;2000 - 2014 Arrow Photography. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
