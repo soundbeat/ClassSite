@@ -136,6 +136,7 @@ footer ul + ul li {
     position: absolute;
     top: 0;
     right: 0px;
+    float: left;
   }
   footer li {
     width: 140px;
