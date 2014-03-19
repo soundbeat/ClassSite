@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JavaScript Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script>
+    function hideImg(){
+        currId = document.getElementsByTagName('p');
+        for(i=0;i<currId.length;i++){
+            if(currId[i].className =='hidden preview'){
+                currId[i].style.display = 'none';
+            }
+        }
+    }
+
+    var oldMenu = null;
+    function showImg(menuId){
+        currMenu = document.getElementById(menuId);
+        if(currMenu.style.display =='block'){
+            currMenu.style.display = 'none';
+        }else{
+            if(oldMenu){
+                oldMenu.style.display = 'none';
+            }
+            currMenu.style.display = 'block';
+            oldMenu = currMenu;
+
+        }
+        return false;
+    }
+
+
+</script>
+
+<style>
+body{
+width: 960px;
+margin: 0 auto;
+font: 14px/1.5 'Open Sans', sans-serif;
+}
+
+h1,h2{
+    color:#aa5555;
+}
+
+
+
+li{
+    float: left;
+    margin: auto;
+    padding: 50px;
+
+}
+
+
+#page{
+width: 960px;
+position: relative;
+top: 0;
+right: auto;
+left: auto;
+}
+
+   p img{
+       width: 100%;
+   }
+    .thumbnail{
+        width: 100px;
+    }
+    .hidden{
+        position: absolute;
+        top: 230px;
+        left: 350px;
+        width: 300px;
+    }
+
+</style>
+
+</head>
+<body onload="hideImg(),showImg('gallone')">
+<div id="page" class="container">
+    <head>
+        <h1>Example Javascript</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../portfolio/index.html">Portfolio</a></li>
+                <li><a href="../../packages.html">Packages</a></li>
+                <li><a href="../../news.html">News</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </head>
+
+<div id="content" class="container">
+    <h2>Adele And John's Gallery</h2>
+    <h3>Click thumbnail to view</h3>
+    <p class="thumbnail"><a href="#" onclick="showImg('gallone')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></a></p>
+    <p class="hidden preview" id="gallone"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></p>
+    <p class="thumbnail"><a href="#"onclick="showImg('galltwo')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></a></p>
+    <p class="hidden preview" id="galltwo"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></p>
+    <p class="thumbnail"><a href="#" onclick="showImg('gallthree')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></a></p>
+    <p class="hidden preview" id="gallthree"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></p>
+    <p class="thumbnail"><a href="#" onclick="showImg('gallfour')"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></a></p>
+    <p class="hidden preview" id="gallfour"><img src="../../portfolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></p>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../../general/terms.html">Terms &amp; Conditions</a> </li>
+                <li><abbr title="Frequently Asked Questions"><a href="../../general/faq.html">FAQ</a></abbr></li>
+            </ul>
+        </nav>
+
+    </footer>
+   </div>
+<p>&copy;2000-2014 Arrow Photography. All rights reserved</p>
+</body>
+</html>
