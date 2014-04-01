@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
     <meta charset="UTF-8"/>
     <title>Welcome to Arrow Photography</title>
     <meta name="viewport" content="width: device-width;initial-scale=1"/>
+    <script src="assets/js/modernizr.custom.10981.js"></script>
     <link href="assets/css/styles.css" rel="stylesheet" />
 
 </head>
@@ -27,10 +28,30 @@
 
 <section class="first">
 
-    <p>
-    <img src="assets/images/ArrowPhotograhyFrontPage1.jpg" width="760">
 
-    </p>
+    <div class="cycle-slideshow"
+       data-cycle-fx=scrollHorz
+       data-cycle-timeout=2000
+            >
+        <!-- empty element for overlay -->
+    <div class="cycle-overlay"></div>
+
+    <img src="assets/images/ArrowPhotograhyFrontPage1.jpg"
+         data-cycle-title="Jane and Richard's wedding"
+         data-cycle-desc="St Wilfrid's Church, Calverley">
+        <img src="assets/images/ArrowPhotograhyFrontPage2.jpg"
+             data-cycle-title="Anna and Kevin's wedding"
+             data-cycle-desc="Sonnenberg Beach">
+        <img src="assets/images/ArrowPhotograhyFrontPage3.jpg"
+             data-cycle-title="Jane and Richard's wedding"
+             data-cycle-desc="St Wilfrid's Church, Calverley">
+        <img src="assets/images/ArrowPhotograhyFrontPage4.jpg"
+             data-cycle-title="Adele and John's wedding"
+             data-cycle-desc="Sydney">
+        <img src="assets/images/ArrowPhotograhyFrontPage5.jpg"
+             data-cycle-title="Anna and Kevin's wedding"
+             data-cycle-desc="Sydney">
+    </div>
     <h2>Welcome to Arrow Photography</h2>
     <p>
         The 2 important parts to capturing a photograph - &ndash; &mdash; the subject and the location.
@@ -136,5 +157,16 @@
         </ul>
         </footer>
 </div>
+
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery.cycle2.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('.slideshow').cycle();
+    })
+
+</script>
 </body>
 </html>
